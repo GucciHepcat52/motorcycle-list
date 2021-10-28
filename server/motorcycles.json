@@ -1,0 +1,14 @@
+[
+    {
+        "name": "FZ 07",
+        "year": 2015,
+        "color": "red",
+        "id": 1
+    },
+    {
+        "name":"XSR 900",
+        "year": 2018,
+        "color": "blue",
+        "id": 2
+    }
+]

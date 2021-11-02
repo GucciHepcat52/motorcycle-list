@@ -12,6 +12,10 @@ app.get('/',function(req,res) {
     res.sendFile(path.join(__dirname, '../client/index.html'));
   });
 
+  app.get('/js',function(req,res) {
+    res.sendFile(path.join(__dirname, '../client/main.js'));
+  });
+
 app.post('/motorcycle', motorcycleCtrl.addMotorcycle)
 
 const port = process.env.PORT || 4545

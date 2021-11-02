@@ -14,7 +14,7 @@ function addMotorcycle(event){
         color: color.value
     }
 
-    axios.post('http://localhost:4545/motorcycle', body)
+    axios.post('https://motorcycle-list.herokuapp.com/motorcycle', body)
         .then(res => {
             console.log(res.data)
         })

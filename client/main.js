@@ -14,7 +14,7 @@ function addMotorcycle(event){
         color: color.value
     }
 
-    axios.post(`${process.env.baseURL}/motorcycle`, body)
+    axios.post(`/motorcycle`, body)
         .then(res => {
             console.log(res.data)
         })

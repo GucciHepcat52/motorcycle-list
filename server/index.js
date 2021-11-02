@@ -18,6 +18,6 @@ app.get('/',function(req,res) {
 
 app.post('/motorcycle', motorcycleCtrl.addMotorcycle)
 
-const port = process.env.PORT || 4545
+const port = process.env.PORT
 
 app.listen(port, console.log(`Take us warp ${port}!`))

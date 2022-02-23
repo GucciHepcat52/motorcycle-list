@@ -1,15 +1,14 @@
-const express = require('express')
-const cors = require('cors')
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
+const { SERVER_PORT } = process.env;
+const { addMotorcycle } = require("./motorcycleCtrl");
 
-const app = express()
+const app = express();
 
-app.use(express.json())
-app.use(cors())
+app.use(express.json());
+app.use(cors());
 
-const motorcycleCtrl = require('./motorcycleCtrl')
+app.post("/motorcycle", addMotorcycle);
 
-app.post('/motorcycle', motorcycleCtrl.addMotorcycle)
-
-const port = 4545
-
-app.listen(port, console.log(`Take us warp ${port}!`))
+app.listen(SERVER_PORT, console.log(`Take us warp ${SERVER_PORT}!`));
